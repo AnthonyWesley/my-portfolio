@@ -1,0 +1,37 @@
+/* Alterando a cor */
+.slick-prev:before,
+.slick-next:before {
+  color: #164e63;
+}
+
+.slick-dots {
+}
+
+.slick-dots li {
+  padding: 0 0 0 1vw;
+  margin-top: 1.5vh;
+}
+
+.slick-dots button::before {
+  margin: 0 auto;
+  color: transparent !important;
+  padding: 0 0 0 1vw;
+  margin-top: 2vh;
+  font-size: 0.1vw;
+  border-radius: 10px;
+  background-color: #164e63;
+}
+
+@media screen and (max-width: 768px) {
+  .slick-dots li {
+    padding: 0 0 0 2vw;
+    margin-top: 0.5vh;
+  }
+
+  .slick-dots button::before {
+    margin: 0 0.5vw;
+    padding: 0 0 0 2vw;
+    margin-top: 2vh;
+    font-size: 1.5vw;
+  }
+}

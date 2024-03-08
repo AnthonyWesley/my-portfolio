@@ -2,32 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Poppins", sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.effect-underline {
+  @apply relative  opacity-70 transition-all ease-in-out
+  before:absolute before:bottom-0 before:left-[50%] before:h-[3.0px] before:w-0 
+  before:origin-center before:bg-zinc-900 before:transition-[width] 
+  before:duration-700 before:ease-in-out after:absolute 
+  after:bottom-0 after:right-[50%] after:h-[3.0px] after:w-0 after:origin-center
+after:bg-zinc-900 after:transition-[width] after:duration-700 after:ease-in-out 
+hover:opacity-100 hover:before:w-[50%] hover:after:w-[50%]
+dark:before:bg-zinc-50 dark:after:bg-zinc-50;
+}
+
+.shadow-basic {
+  @apply shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]
+ dark:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)];
 }

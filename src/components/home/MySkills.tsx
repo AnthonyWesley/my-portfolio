@@ -1,0 +1,110 @@
+"use client";
+import { Icon } from "@iconify/react/dist/iconify.js";
+import React from "react";
+
+const skills = [
+  {
+    icon: "skill-icons:html",
+    title: "HTML",
+  },
+  {
+    icon: "skill-icons:css",
+    title: "CSS",
+  },
+  {
+    icon: "skill-icons:javascript",
+    title: "JavaScript",
+  },
+  {
+    icon: "skill-icons:typescript",
+    title: "TypeScript",
+  },
+  {
+    icon: "skill-icons:react-dark",
+    title: "React",
+  },
+  {
+    icon: "skill-icons:nextjs-dark",
+    title: "Next.js",
+  },
+  {
+    icon: "skill-icons:tailwindcss-dark",
+    title: "Tailwind CSS",
+  },
+  {
+    icon: "skill-icons:styledcomponents",
+    title: "Styled Components",
+  },
+
+  {
+    icon: "skill-icons:nodejs-dark",
+    title: "Node.js",
+  },
+  {
+    icon: "skill-icons:postgresql-dark",
+    title: "PostgreSQL",
+  },
+  {
+    icon: "skill-icons:mongodb",
+    title: "MongoDB",
+  },
+  {
+    icon: "skill-icons:expressjs-dark",
+    title: "Express.js",
+  },
+  {
+    icon: "simple-icons:fastify",
+    title: "Fastify",
+  },
+  {
+    icon: "skill-icons:prisma",
+    title: "Prisma",
+  },
+  {
+    icon: "skill-icons:sequelize-dark",
+    title: "Sequelize",
+  },
+
+  {
+    icon: "skill-icons:cs",
+    title: "C#",
+  },
+  {
+    icon: "skill-icons:git",
+    title: "Git",
+  },
+  {
+    icon: "skill-icons:electron",
+    title: "React Native",
+  },
+  {
+    icon: "simple-icons:shadcnui",
+    title: "Shadcnui",
+  },
+];
+
+export default function MySkills() {
+  return (
+    <div className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="col-span-2 my-1 flex items-center justify-between text-lg opacity-50 md:col-span-3 lg:col-span-4 lg:text-2xl">
+        <h1 className="w-32 font-extrabold">MY SKILLS</h1>
+        <span className="mr-1 flex w-10/12 border-b border-zinc-800 dark:border-zinc-50"></span>
+      </div>
+      {skills.map((skill, index) => (
+        <div
+          key={index}
+          className="my-1 mr-1 flex items-center justify-center gap-1 rounded-sm border py-4 text-xs"
+        >
+          <div>{skill.title}</div>
+          <div className="text-xl">
+            <Icon icon={skill.icon} />
+          </div>
+        </div>
+      ))}
+      <div className="col-span-2 flex items-center justify-between text-4xl opacity-50 md:col-span-3 lg:col-span-4">
+        <span className="mr-1 flex w-full border-b border-zinc-800 dark:border-zinc-50"></span>
+        <Icon icon="eos-icons:rotating-gear" />
+      </div>
+    </div>
+  );
+}
