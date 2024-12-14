@@ -14,9 +14,6 @@ const skills = [
   { icon: "skill-icons:styledcomponents", title: "Styled Components" },
   { icon: "simple-icons:react-router", title: "React Router" },
   { icon: "simple-icons:zustand", title: "Zustand" },
-  { icon: "simple-icons:apexcharts", title: "ApexCharts" },
-  { icon: "simple-icons:react-toastify", title: "React Toastify" },
-  { icon: "simple-icons:date-fns", title: "date-fns" },
 
   // Back-end
   { icon: "skill-icons:nodejs-dark", title: "Node.js" },
@@ -27,9 +24,6 @@ const skills = [
   { icon: "skill-icons:prisma", title: "Prisma" },
   { icon: "skill-icons:sequelize-dark", title: "Sequelize" },
   { icon: "simple-icons:jwt", title: "JWT (Json Web Token)" },
-  { icon: "simple-icons:bcrypt", title: "BcryptJS" },
-  { icon: "simple-icons:ulid", title: "ULID" },
-  { icon: "simple-icons:dotenv", title: "Dotenv" },
 
   // Ferramentas e utilitários
   { icon: "simple-icons:axios", title: "Axios" },
