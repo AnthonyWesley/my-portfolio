@@ -16,7 +16,7 @@ const links = [
   },
   {
     name: "curriculum",
-    url: "/Curriculum.pdf",
+    url: "/anthony-curriculum.pdf",
     icon: "streamline:business-user-curriculum-solid",
   },
 ];

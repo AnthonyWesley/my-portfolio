@@ -3,7 +3,7 @@ import { StaticImageData } from "next/image";
 type TechnologiesType = {
   type: string;
   repositoryUrl: string;
-  technologiesUsed: string[];
+  stack: string[];
 };
 
 export type ApplicationType = {

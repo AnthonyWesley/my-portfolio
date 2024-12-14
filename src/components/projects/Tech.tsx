@@ -9,7 +9,7 @@ type TechProps = {
 };
 export default function Tech({ tech, name, url }: TechProps) {
   return (
-    <div className="my-2 flex flex-col items-start justify-center gap-1">
+    <div className="my-2 flex flex-col items-start justify-center gap-1 text-sm">
       <div className="flex w-full items-center justify-between text-base font-bold">
         {name}{" "}
         <G_Link

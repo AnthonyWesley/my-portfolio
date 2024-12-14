@@ -39,7 +39,7 @@ export default function page() {
               >
                 <Tech
                   name={tech.type}
-                  tech={tech.technologiesUsed}
+                  tech={tech.stack}
                   url={tech.repositoryUrl}
                 />
               </div>
